@@ -1,0 +1,1 @@
+default["puma"]["workers"] = 2

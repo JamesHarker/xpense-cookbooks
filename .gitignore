@@ -1,0 +1,7 @@
+.DS_Store
+*.swp
+.idea
+.DS_Store
+
+/cookbooks/env-vars/templates/default/xpense.env
+/cookbooks/newrelic/attributes/default.rb
