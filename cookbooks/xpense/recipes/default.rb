@@ -1,4 +1,4 @@
-if ['app_master', 'app', 'util', 'solo'].include?(node[:instance_role])
+if ["app_master", "app", "util", "solo"].include?(node[:instance_role])
   node[:applications].each do |app, data|
     template "/data/#{app}/shared/config/env.custom"do
       source "env.custom"
@@ -10,7 +10,7 @@ if ['app_master', 'app', 'util', 'solo'].include?(node[:instance_role])
   end
 end
 
-if ['app_master', 'app'].include?(node[:instance_role])
+if ["app_master", "app", "solo"].include?(node[:instance_role])
   node[:applications].each do |app, data|
 
     execute "Update Puma for zero downtime deploys" do
